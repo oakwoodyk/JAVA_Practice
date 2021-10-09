@@ -7,8 +7,6 @@ console.log(result);
 
 
 
-
-
 /* 問題② */
 const a = [2020, 2021];
 function leapYear (a) {
