@@ -1,24 +1,24 @@
-//課題①
+/* 問題① */
 const array = [2, 4, 7, 5, 4, 3, 8];
-const F = array.filter(function (x, i, self) {
-  return self.indexOf(x) === i;
+const result = array.filter(function(x, i, self){
+  return self.indexOf(x) == i;
 });
-console.log(F);
+console.log(result);
 
 
-//課題②
-function LeapYear(year) {
-  if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
-    return true;
-    } {
-    return false;
-  }
+
+
+
+/* 問題② */
+const a = [2020, 2021];
+function leapYear (a) {
+  if (a % 4 === 0 && a % 100 !== 0) {
+    return `${a}はうるう年です`;
+  } else if (a % 400 === 0) {
+    return `${a}はうるう年です`;
+  } else {
+    return `${a}はうるう年ではありません`;
+  };
 };
-const setYear = [2020, 2021];
-for (let i = 0; i < setYear.length; i++) {
-  if (LeapYear(setYear[i])) {
-    console.log(setYear[i] + 'はうるう年である');
-  } else{
-    console.log(setYear[i]+ 'はうるう年ではない');
-  }
-}
+console.log(leapYear(a[0]));
+console.log(leapYear(a[1]));
